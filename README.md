@@ -1,0 +1,2 @@
+# nitelite
+Lightweight Ninite alternative
