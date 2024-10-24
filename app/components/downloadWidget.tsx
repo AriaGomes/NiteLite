@@ -31,17 +31,22 @@ export const DownloadWidget = ({ selected }: { selected: Package[]}) => {
     };
     
     return (
-        <div className="fixed bottom-4 right-4 bg-white border border-gray-300 p-4 shadow-lg z-50">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" onClick={() => {
-      
-            handleDownloadClick()}}>
-            Download
-          </button>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" onClick={()=> {
-  
-            handleCopyClick()}}>
-            Copy
-          </button>
+        <div className="fixed bottom-4 right-4 bg-slate-600 border border-gray-300 p-4 shadow-lg z-50 rounded">
+          <div className="text-center pb-2">
+            {selected.length} packages selected
+          </div>
+          <div className="flex">
+            <button className="bg-blue-500 text-white px-4 py-2 mr-2 rounded hover:bg-blue-700" onClick={() => {
+        
+                handleDownloadClick()}}>
+                Download
+            </button>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" onClick={()=> {
+    
+                handleCopyClick()}}>
+                Copy
+            </button>
+          </div>
         </div>
       );
 }
