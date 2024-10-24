@@ -1,8 +1,10 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Card from "./components/card";
 import * as list from "./ninitePackageList.json";
+import { Package } from "./types";
+import { DownloadWidget } from "./components/downloadWidget";
 
 export default function Home() {
   type PackageList = {
@@ -11,11 +13,11 @@ export default function Home() {
   
   const typedList: PackageList = list as PackageList;
 
-  const [selected, setSelected] = useState<string[]>([]);
+  const [selected, setSelected] = useState<Package[]>([]);
 
-  useEffect(() => {
-    console.log(selected);
-  }, [selected]);
+  // useEffect(() => {
+  //   console.log(selected);
+  // }, [selected]);
 
   return (
     <div className="w-full h-full">
@@ -33,6 +35,10 @@ export default function Home() {
           </div>
         ))
       
+      }
+
+      {
+        selected.length > 0 ? <DownloadWidget selected={selected} setSelected={setSelected} /> : ""
       }
     </div>
   );
