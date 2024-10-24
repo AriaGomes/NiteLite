@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Package } from "../types";
 import getCommand from "../util/getCommand";
 
-export const DownloadWidget = ({ selected, setSelected }: { selected: Package[], setSelected: (selected: Package[]) => void }) => {
+export const DownloadWidget = ({ selected }: { selected: Package[]}) => {
     
     const [command, setCommand] = useState<string | null>(null);
 

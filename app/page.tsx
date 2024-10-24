@@ -38,7 +38,7 @@ export default function Home() {
       }
 
       {
-        selected.length > 0 ? <DownloadWidget selected={selected} setSelected={setSelected} /> : ""
+        selected.length > 0 ? <DownloadWidget selected={selected} /> : ""
       }
     </div>
   );
