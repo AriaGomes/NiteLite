@@ -1,0 +1,116 @@
+{
+    "Web Browsers": [
+    
+        "Google Chrome",
+        "Opera Stable",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "Brave"
+    ],
+    "Messaging": [
+        "Zoom",
+        "Discord",
+        "Skype",
+        "Pidgin",
+        "Mozilla Thunderbird",
+        "Trillian"
+    ],
+    "Media": [
+        "iTunes",
+        "VLC media player",
+        "AIMP",
+        "foobar2000",
+        "Winamp",
+        "Audacity",
+        "K-Lite Codec Pack Standard",
+        "GOM Player",
+        "Spotify",
+        "MediaMonkey",
+        "HandBrake"
+    ],
+   "Runtimes": [
+    "Java 8",
+    "AdoptOpenJDK JDK with Hotspot 11",
+    "AdoptOpenJDK JDK with Eclipse OpenJ9 17",
+    ".NET Framework",
+    "Microsoft .NET Runtime 5.0",
+    "Microsoft .NET Runtime 6.0",
+    "Microsoft .NET Runtime 7.0",
+    "Microsoft .NET Runtime 8.0 Preview"
+  ],
+  "Imaging": [
+    "Krita",
+    "Blender",
+    "paint.net",
+    "GIMP",
+    "IrfanView",
+    "XnView",
+    "Inkscape",
+    "FastStone Capture",
+    "FastStone Image Viewer",
+    "Greenshot",
+    "ShareX"
+  ],
+  "Documents": [
+    "Foxit PDF Reader",
+    "LibreOffice",
+    "SumatraPDF",
+    "CutePDF Writer",
+    "OpenOffice"
+  ],
+  "Security": [
+    "Malwarebytes",
+    "SUPERAntiSpyware"
+  ],
+  "File Sharing": [
+    "qBittorrent"
+  ],
+  "Online Storage": [
+    "Dropbox",
+    "Google Drive",
+    "Microsoft OneDrive"
+  ],
+  "Other": [
+    "Evernote",
+    "Google Earth Pro",
+    "Steam",
+    "KeePass",
+    "Everything"
+  ],
+  "Utilities": [
+    "TeamViewer",
+    "ImgBurn",
+    "VNC Server",
+    "VNC Viewer",
+    "TeraCopy",
+    "CDBurnerXP",
+    "Revo Uninstaller",
+    "Launchy",
+    "WinDirStat",
+    "WizTree",
+    "Glary Utilities",
+    "InfraRecorder",
+    "Open-Shell-Menu",
+    "CCleaner"
+  ],
+  "Compression": [
+    "7-Zip",
+    "PeaZip",
+    "WinRAR"
+  ],
+  "Developer Tools": [
+    "Python 3",
+    "Python 2",
+    "Notepad++",
+    "AdoptOpenJDK JDK with Hotspot 8",
+    "AdoptOpenJDK JDK with Hotspot 11",
+    "AdoptOpenJDK JDK with Eclipse OpenJ9 17",
+    "Amazon Corretto 8",
+    "Amazon Corretto 11",
+    "Amazon Corretto 17",
+    "WinSCP",
+    "PuTTY",
+    "WinMerge",
+    "Microsoft Visual Studio Code"
+  ]
+}
