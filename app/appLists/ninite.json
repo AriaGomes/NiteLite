@@ -1,34 +1,36 @@
 {
-  "Community": false,
-    "Web Browsers": [
-        "Google Chrome",
-        "Opera Stable",
-        "Mozilla Firefox",
-        "Microsoft Edge",
-        "Brave"
-    ],
-    "Messaging": [
-        "Zoom",
-        "Discord",
-        "Skype",
-        "Pidgin",
-        "Mozilla Thunderbird",
-        "Trillian"
-    ],
-    "Media": [
-        "iTunes",
-        "VLC media player",
-        "AIMP",
-        "foobar2000",
-        "Winamp",
-        "Audacity",
-        "K-Lite Codec Pack Standard",
-        "GOM Player",
-        "Spotify",
-        "MediaMonkey",
-        "HandBrake"
-    ],
-   "Runtimes": [
+  "name": "Ninite",
+  "downloads": "1000000",
+  "community": false,
+  "Web Browsers": [
+    "Google Chrome",
+    "Opera Stable",
+    "Mozilla Firefox",
+    "Microsoft Edge",
+    "Brave"
+  ],
+  "Messaging": [
+    "Zoom",
+    "Discord",
+    "Skype",
+    "Pidgin",
+    "Mozilla Thunderbird",
+    "Trillian"
+  ],
+  "Media": [
+    "iTunes",
+    "VLC media player",
+    "AIMP",
+    "foobar2000",
+    "Winamp",
+    "Audacity",
+    "K-Lite Codec Pack Standard",
+    "GOM Player",
+    "Spotify",
+    "MediaMonkey",
+    "HandBrake"
+  ],
+  "Runtimes": [
     "Java 8",
     "AdoptOpenJDK JDK with Hotspot 11",
     "AdoptOpenJDK JDK with Eclipse OpenJ9 17",

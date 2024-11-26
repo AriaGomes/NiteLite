@@ -24,25 +24,34 @@ export type Package = {
 };
 
 export type Query = {
-  query: string
-  name?: string
-  publisher?: string
-  description?: string
-  tags?: string
-  splitQuery?: boolean
-  partialMatch?: boolean
-  ensureContains?: boolean
-  preferContains?: boolean
-  sample?: number
+  query: string;
+  name?: string;
+  publisher?: string;
+  description?: string;
+  tags?: string;
+  splitQuery?: boolean;
+  partialMatch?: boolean;
+  ensureContains?: boolean;
+  preferContains?: boolean;
+  sample?: number;
 };
 
 export type QueryResult = {
-  Code: number
-  Packages: Package[]
-  Total: number
+  Code: number;
+  Packages: Package[];
+  Total: number;
 };
 
 export type PackageList = {
-  community?: boolean
-  [key: string]: string[] | boolean | undefined;
+  name: string;
+  community: boolean;
+  downloads: number;
+  [key: string]: string[] | string | number | boolean | undefined;
+};
+
+export type PackageListEntry = {
+  id: string;
+  community: boolean;
+  name: string;
+  download: number;
 };
