@@ -1,43 +1,48 @@
 export type Package = {
-    Id: string;
+  Id: string;
 
-Versions: string[];
-Latest: {
-  Name: string;
-  Publisher: string;
-  Tags: string[];
-  Description?: string;
-  Homepage?: string;
-  License?: string;
-  LicenseUrl?: string;
-};
+  Versions: string[];
+  Latest: {
+    Name: string;
+    Publisher: string;
+    Tags: string[];
+    Description?: string;
+    Homepage?: string;
+    License?: string;
+    LicenseUrl?: string;
+  };
 
-Featured: boolean;
-IconUrl?: string;
-Banner?: string;
-Logo?: string;
+  Featured: boolean;
+  IconUrl?: string;
+  Banner?: string;
+  Logo?: string;
 
-UpdatedAt: Date;
-CreatedAt: Date;
+  UpdatedAt: Date;
+  CreatedAt: Date;
 
-SearchScore: number;
+  SearchScore: number;
 };
 
 export type Query = {
-query: string
-name?: string
-publisher?: string
-description?: string
-tags?: string
-splitQuery?: boolean
-partialMatch?: boolean
-ensureContains?: boolean
-preferContains?: boolean
-sample?: number
+  query: string
+  name?: string
+  publisher?: string
+  description?: string
+  tags?: string
+  splitQuery?: boolean
+  partialMatch?: boolean
+  ensureContains?: boolean
+  preferContains?: boolean
+  sample?: number
 };
 
 export type QueryResult = {
-    Code: number
+  Code: number
   Packages: Package[]
   Total: number
+};
+
+export type PackageList = {
+  community?: boolean
+  [key: string]: string[] | boolean | undefined;
 };

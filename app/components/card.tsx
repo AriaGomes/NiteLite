@@ -44,7 +44,7 @@ const Card = ({ packageName, selected, setSelected }: { packageName: string, sel
                 <input type="checkbox" checked={selected.some((p) => p.Id === pkg.Id)} readOnly className="mr-2" />
                 <h2 className="flex-1 text-center">{packageName}</h2>
                 <div className="flex-shrink-0">
-                    {GetSiteFavicon(pkg.Latest.Homepage) ? <Image src={GetSiteFavicon(pkg.Latest.Homepage)} alt={`${packageName} icon`} width={32} height={32} layout="fixed" /> : null}
+                    {GetSiteFavicon(pkg.Latest.Homepage) ? <Image src={GetSiteFavicon(pkg.Latest.Homepage)} alt={`${packageName} icon`} width={32} height={32} /> : null}
                 </div>
             </div>
         ) : null

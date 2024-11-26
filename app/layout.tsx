@@ -1,11 +1,7 @@
+'use client';
 
-import type { Metadata } from "next";
+import Navbar from "./components/navbar";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "NiteLite",
-  description: "lightweight ninite alternative",
-};
 
 export default function RootLayout({
   children,
@@ -14,9 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
