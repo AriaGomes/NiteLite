@@ -6,7 +6,7 @@ import { Package, PackageList } from '@/app/types';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-export const ListById = () => {
+const ListById = () => {
     const [list, setList] = useState<PackageList>();
     const [loading, setLoading] = useState(true);
     const [selected, setSelected] = useState<Package[]>([]);

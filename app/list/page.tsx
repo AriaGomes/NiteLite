@@ -8,7 +8,7 @@ interface ListsData {
     appLists: PackageListEntry[];
 }
 
-export const List = () => {
+const List = () => {
     const [lists, setLists] = useState<ListsData>({ appLists: []});
     const [loading, setLoading] = useState(true);
 

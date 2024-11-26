@@ -1,6 +1,7 @@
 'use client';
 
 import Navbar from "./components/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <SpeedInsights />
       <body
         className={`antialiased`}
       >
