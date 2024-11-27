@@ -19,7 +19,6 @@ const CreatePage = () => {
     };
 
     const handleSubmit = async () => {
-        console.log(blocks);
         const response = await fetch("/api/create", {
             method: "POST",
             body: JSON.stringify(blocksToPackageList(listName, blocks)),
