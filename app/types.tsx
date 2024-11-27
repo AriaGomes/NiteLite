@@ -55,3 +55,9 @@ export type PackageListEntry = {
   name: string;
   download: number;
 };
+
+export type BlockData = {
+  id: number;
+  categoryName: string;
+  selectedPackages: Package[];
+}

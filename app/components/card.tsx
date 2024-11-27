@@ -4,7 +4,7 @@ import { Package } from "../types";
 import Image from "next/image";
 import GetSiteFavicon from "../util/getSiteFavicon";
 
-const Card = ({ packageName, selected, setSelected }: { packageName: string, selected: Package[], setSelected: (selected: Package[]) => void }) => {
+const Card = ({ packageName, selected, setSelected, create }: { packageName: string, selected?: Package[], setSelected?: (selected: Package[]) => void, create?: boolean }) => {
     const [pkg, setPkg] = useState<Package | null>(null);
 
     useEffect(() => {
@@ -30,18 +30,22 @@ const Card = ({ packageName, selected, setSelected }: { packageName: string, sel
 
     const handleClick = () => {
         if (pkg) {
-            if (selected.some((p) => p.Id === pkg.Id)) {
-                setSelected(selected.filter((p) => p.Id !== pkg.Id));
+            if (selected?.some((p) => p.Id === pkg.Id)) {
+                setSelected?.(selected.filter((p) => p.Id !== pkg.Id));
             } else {
-                setSelected([...selected, pkg]);
+                setSelected?.([...selected || [], pkg]);
             }
         }
     };
 
+    const handleCreateClick = () => { 
+        setSelected?.(selected?.filter((p) => p.Id !== pkg?.Id) || []);
+    }
+
     return (
         pkg ? (
-            <div className="rounded flex items-center justify-between w-full h-full p-3 cursor-pointer bg-slate-600" onClick={handleClick}>
-                <input type="checkbox" checked={selected.some((p) => p.Id === pkg.Id)} readOnly className="mr-2" />
+            <div className="rounded flex items-center justify-between w-full h-full p-3 cursor-pointer bg-slate-600" onClick={() => !create && handleClick()}>
+                {create ? (<div className="cursor-pointer" onClick={handleCreateClick}>X</div>) : <input type="checkbox" checked={selected?.some((p) => p.Id === pkg.Id)} readOnly className="mr-2" /> }
                 <h2 className="flex-1 text-center">{packageName}</h2>
                 <div className="flex-shrink-0">
                     {GetSiteFavicon(pkg.Latest.Homepage) ? <Image src={GetSiteFavicon(pkg.Latest.Homepage)} alt={`${packageName} icon`} width={32} height={32} /> : null}

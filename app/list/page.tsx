@@ -21,8 +21,6 @@ const List = () => {
             });
     }, []);
 
-    console.log(lists)
-
     const officialAppLists = lists.appLists ? lists.appLists.filter(list => !list.community) : [];
     const communityAppLists = lists.appLists ? lists.appLists.filter(list => list.community) : [];
 
